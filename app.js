@@ -10,7 +10,17 @@
 
 // TULIS SCRIPT KAMU DI SINI
 
-
+function calculateKomisi(nilaikontak) {
+  if (nilaikontak < 1000000){
+    return 0;
+  } else if (nilaikontak < 5000000) {
+    return 100000;
+  } else if (nilaikontak < 5500000) {
+    return 250000;
+  } else {
+    return 275000;
+  }
+}
 
 // JANGAN HAPUS / UBAH SCRIPT DI BAWAH
-module.exports = calculateKomisi
+module.exports = calculateKomisi;
